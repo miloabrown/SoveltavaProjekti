@@ -2,7 +2,13 @@
 
 Tänne kaks funktioo (omavalintaiset hakualgoritmit, kunhan on suunnitelmassa mainittujen aikakompleksien sisällä), jotka ottaa listan, sekä haettavan luvun x parametriks.
 
-Palauttaa -1 jos lukua ei löydy, x:n jos löytyy.
+Printtaa tulos, ei tarvi palauttaa mitään
 
 
 """
+
+def algoritmi1():
+    return "Tähän algoritmin nimi"
+
+def algoritmi2():
+    return "Tähän sama homma"    
