@@ -79,6 +79,11 @@ def kayttoliittyma():
     #Ikkuna näytölle
     root.mainloop()
 
+
+def getUnsorted():
+    return satunnainenLista
+def getSorted():
+    return jarjestettyLista
 def main():
     kayttoliittyma()
     
