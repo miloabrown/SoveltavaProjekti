@@ -1,3 +1,7 @@
-Jeremias Shadbolt:  524130
-Milo Brown: 518441
-Aleksi Pelkonen: 524214
+Ryhmä: TKO_AF
+
+Ohjelman tarkoitus on visualisoida erilaisten lajittelu- sekä hakualgoritmien aikavaativuuksien eroja. 
+Ohjelman ajamisen onnistumiseksi, tarvitset seuraavat kolmannen osapuolen kirjastot:
+- Matplotlib
+- Numpy
+
