@@ -11,6 +11,8 @@ before_script:
   - source venv/bin/activate
   - pip3 install requests
   - pip3 install python-dotenv
+  - pip3 install matplotlib
+  - pip3 install numpy
 
 test:
   script:
