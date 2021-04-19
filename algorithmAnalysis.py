@@ -47,18 +47,25 @@ def lajittelut():
 #-Binäärihaku
 #-Lineaarihaku
 #Sekä visualisoidaan niiden suorituksen käyttämä aika Matplotlibillä
+
+#Lineaarihaulle annetaan haettavaksi 10 miljoonan alkion listasta alkio 200,000, jottei sillä menisi niin tuhottoman kauan
+#Binäärihaulle annetaan miljarin alkion listasta viimeinen alkio (eli huonoin mahdollinen haettava), ettei se olisi niin tolkuttoman nopea. Sen tulos vieläpä kerrotaan sadalla
+
+# Binäärihaun käyttämä aika on silti vähemmän, kuin lineaarihaulla.
 def haut():
     #Koska haussa listat on järjestetty, täytyy hakea listan _viimeinen_ alkio, kompleksisuuksien erojen korostamiseksi. 
     
     aloitus = time.time()
-    searchAlgo.algoritmi1(jarjestettyLista, 9999999)
+    searchAlgo.algoritmi1(jarjestettyLista, 200000)
     ero1 = (time.time() - aloitus)
 
-    
+    #binäärihaulle annettava miljardin alkion kokoinen lista
+    binaarilista = np.arange(1000000000)
 
     aloitus = time.time()
-    searchAlgo.algoritmi2(jarjestettyLista, 9999999)
-    ero2 = (time.time() - aloitus) * 10000 # kerrotaan kymmenellätuhannella, sillä ero2 oli jatkuvasti n. 3.719329833984375e-05, joten se oli kerrottava e-x-1:n määrällä nollia, että luku olisi ns. totuudenmukainen. 
+    searchAlgo.algoritmi2(binaarilista, 1000000000) #annetaan vielä binäärihaulle huonoin mahdollinen etsittävä
+    print(time.time() - aloitus)
+    ero2 = (time.time() - aloitus) * 100 # kerrotaan tuhannella, sillä ero2 oli jatkuvasti n. 3.719329833984375e-05, eli tolkuttoman pieni, joten se on vielä visualisoinnin vuoksi kerrottava, että pylväsdiagrammissa edes näkyisi jotain. 
 
     nimet = ["Linear Search", "Binary Search"]
     print(ero1, ero2)
