@@ -1,0 +1,7 @@
+stages:
+    - test
+
+test-job1:
+  stage: test
+  script:
+      - python tests.py test
