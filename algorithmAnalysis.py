@@ -48,7 +48,7 @@ def haut(lista):
     #algoritmi2
     lopetus2 = aloitus2 - time.time()
 
-    nimet = [searchAlgo.algoritmi1(), searchAlgo.algoritmi2()]
+    nimet = [searchAlgo.algoritmi1(jarjestettyLista,99999), searchAlgo.algoritmi2(jarjestettyLista,99999)]
     
     arvot = [lopetus1, lopetus2]
 
