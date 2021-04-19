@@ -5,3 +5,5 @@ test-job1:
   stage: test
   script:
       - echo "testi1234"
+      - python tests.py
+
