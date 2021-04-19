@@ -2,12 +2,7 @@ language: python
 python: 
     - "3.9"
 
-stages:
-    - test
-
-test-job1:
-  stage: test
-  script:
-      - echo "testi1234"
-      - python tests.py
+script:
+  - echo "testi1234"
+  - python tests.py
 
