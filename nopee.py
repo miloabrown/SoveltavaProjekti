@@ -1,4 +1,4 @@
-import unittest
+
 
 def partition(nums, low, high):
     
@@ -32,12 +32,4 @@ def quick_sort(nums):
 
     _quick_sort(nums, 0, len(nums) - 1)
 
-def testi_luokat():
-    
-    print("Testataan quick_sortia alkioilla")
-    random_lista_nums = [10, 2, 55, 8, 91, 35, 65, 100, 105, -1]    
-    quick_sort(random_lista_nums)
-    print(random_lista_nums)
-
-testi_luokat()
 

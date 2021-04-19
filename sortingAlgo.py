@@ -1,12 +1,4 @@
 
-"""
-
-Tänne kaks funktioo (omavalintaiset lajittelualgoritmit, kunhan on suunnitelmassa mainittujen aikakompleksien sisällä), jotka ottaa listan parametriks ja lajittelee ko. listan.
-
-Ei tarvii palauttaa mitään, muttei saa muuttaa alkuperäistä (parametrina saamaansa) taulukkoa. 
-
-
-"""
 #QuickSort
 #Tarkoitus olla mahdollisimman nopea >ihan eniten täyzii
 def partition(nums, low, high):

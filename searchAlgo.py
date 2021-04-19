@@ -1,11 +1,3 @@
-"""
-
-Tänne kaks funktioo (omavalintaiset hakualgoritmit, kunhan on suunnitelmassa mainittujen aikakompleksien sisällä), jotka ottaa listan, sekä haettavan luvun x parametriks.
-
-Printtaa tulos, ei tarvi palauttaa mitään
-
-
-"""
 
 def algoritmi1(list,x): #O(n)
     ans = -1
@@ -33,3 +25,5 @@ def algoritmi2(list,x): #O(log(n))
                 first = mid +1
     # print(index) 
     return index    
+
+
