@@ -1,4 +1,4 @@
-Participants: Jeremias Shadbolt, Aleksi Pelkonen and Milo Brown
+Contributors: Jeremias Shadbolt, Aleksi Pelkonen and Milo Brown
 
 Group project made for school
 
